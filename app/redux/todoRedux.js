@@ -23,12 +23,6 @@ export const reducer = (state = initialState, action) => {
         items: [{label: payload, completed: false}, ...items],
       }
     }
-    
   }
-
-  switch(type) {
-    default: {
-      return state
-    }
-  }
+  
 }

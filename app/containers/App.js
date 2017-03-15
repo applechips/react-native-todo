@@ -38,6 +38,8 @@ class App extends Component {
   }
 
   render() {
+    const {items} = this.props
+
     return (
       <View style={styles.container}>
         <Title>Todo List</Title>
@@ -47,6 +49,7 @@ class App extends Component {
          />
       <View style={styles.divider}/>
          <List
+          items={items}
          />
       <View style={styles.divider} />
         <Footer />
