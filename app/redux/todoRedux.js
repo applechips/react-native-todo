@@ -14,6 +14,17 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
   const {type, payload} = action
+  const { items } = state
+
+  switch(type) {
+    case types.ADD_ITEM: {
+      return {
+        ...state,
+        items: [{label: payload, completed: false}, ...items],
+      }
+    }
+    
+  }
 
   switch(type) {
     default: {
