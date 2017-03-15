@@ -32,12 +32,18 @@ class App extends Component {
     dispatch: PropTypes.func.isRequired,
   }
 
+  addItem = (item) => {
+    const {dispatch} = this.props
+    dispatch(actionCreators.addItem(item))
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Title>Todo List</Title>
         <Input
            placeholder={'Enter an item!'}
+           onSubmit={this.addItem}
          />
       <View style={styles.divider}/>
          <List
