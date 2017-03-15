@@ -15,6 +15,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  divider: {
+    height: 1,
+    backgroundColor: 'whitesmoke',
+  },
 })
 
 const mapStateToProps = (state) => ({
@@ -32,7 +36,8 @@ class App extends Component {
     return (
       <View style={styles.container}>
         <Title>Todo List</Title>
-
+        <View style={styles.divider} />
+          <Footer />
       </View>
     )
   }
