@@ -1,7 +1,11 @@
 const types = {
+  ADD_ITEM: 'ADD_ITEM',
 }
 
 export const actionCreators = {
+  addItem: (item) => {
+    return {type: types.ADD_ITEM, payload: item}
+  },
 }
 
 const initialState = {
