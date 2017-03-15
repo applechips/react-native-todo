@@ -36,8 +36,14 @@ class App extends Component {
     return (
       <View style={styles.container}>
         <Title>Todo List</Title>
-        <View style={styles.divider} />
-          <Footer />
+        <Input
+           placeholder={'Enter an item!'}
+         />
+      <View style={styles.divider}/>
+         <List
+         />
+      <View style={styles.divider} />
+        <Footer />
       </View>
     )
   }
